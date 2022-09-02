@@ -38,7 +38,7 @@ html {
 body {
     background-color: var(--background);
     color: var(--black);
-    height: 100%;
+    height: 90%;
     margin: 0px;
     position: relative;
     overflow: 'hidden';
@@ -46,13 +46,16 @@ body {
 h1 {
     color: var(--green);
     font-variant: small-caps;
-    padding: 20px;
+    padding: 2px;
 }
 main {
     text-align: center;
     height: 100%;
     overflow: 'hidden';
     margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
 a, a:hover {
@@ -61,74 +64,63 @@ a, a:hover {
     margin-top: 5px;
 }
 
-#main-container {
+.main-container {
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
     align-items: flex-start;
-    align-content: center;
-    height: 80%;
+    align-content: flex-start;
+    height: 95%;
+    max-width: 70%;
     overflow: 'hidden';
     margin: 0px;
-    flex: 1;
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: 6%;
+    flex: 3;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
-#title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    color: var(--green);
-    font-variant: small-caps;
-    padding: 20px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: center;
-    height: 80%;
-    overflow: 'hidden';
-    margin: 0px;
-    flex: 1;
-    margin-left: 0;
-    margin-right: 0;
-}
 
-.column {
+.main-container > div {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    min-width: 200px;
-    border: solid 3px var(--green);
-    border-radius: 10px;
-    padding-bottom: 10px;
-    overflow: hidden;
-    min-height: 520;
+    flex-direction: row;
 }
-.column > div {
+.main-container > div > div {
+  
+    min-width: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
-    min-height: 80px;
-    padding: 10px 25px 10px 25px;
-    border: solid 0px black;
+    min-height: 150px;
+    padding: 5px 5px 10px 5px;
+    border: solid 2px #1E575E;
     border-radius: 10px;
-    background-color: var(--surface-1);
-    margin: 5px 5px 0px 5px;
+    margin: 5px 10px 0px 10px;
     text-align: center;
     overflow:hidden;
 }
 
-.column > div > div {
+.main-container > div > div > div {
+    margin: auto;
+    background-color: var(--surface-1);
+    text-align: center;
+    overflow: hidden;
+    min-width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    position: relative;
+    min-height: 70px;
+    padding: 10px 25px 10px 25px;
+    border: solid 0px;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
     text-align: center;
-    overflow: hidden;
+    overflow:hidden;
 
 }
 
@@ -142,18 +134,20 @@ h4 {
     margin: 0px;
     position: absolute;
     padding: 0px 0px 0px 0px;
-    left: 3px;
-    top: 7px;
+    left: 2px;
+    top: 10px;
     writing-mode: vertical-rl;
     color: var(--background);
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #image {
     float: left;
 	margin-left: 10%;
-	max-width: 25%;
-	max-height: 65%;
-	border-radius: 2%;
+    margin-top: 5%;
+    justify-content:center;
+	max-width: 40%;
+	max-height: 80%;
+	border-radius: 4%;
 }
