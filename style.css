@@ -1,6 +1,6 @@
 :root {
     --foreground:#ebbcba;
-    --background: #191724;
+    --background: #9cbcb4;
     --selection-foreground: #9ccfd8;
     --selection-background: #ebbcba;
     --url-color: #B7BDF8;
@@ -15,14 +15,14 @@
     --inactive-tab-background: #1E2030;
     --tab-bar-background: #181926;
    
-    --surface-1: #26233a;
+    --surface-1: #BBDCDC;
     --surface-2: #6e6a86;
     --surface-3: #6e6a86;
     --surface-4: #FFFFFF44;
-    --black: #191724;
+    --black: #1c242c;
     --purple: #c4a7e7;
     --red: #eb6f92;
-    --green: #9ccfd8;
+    --green: #1E575E;
     --yellow: #EED49F;
     --gold: #f6c177;
     --magenta: #ebbcba;
@@ -37,14 +37,14 @@ html {
 }
 body {
     background-color: var(--background);
-    color: var(--white);
+    color: var(--black);
     height: 100%;
     margin: 0px;
     position: relative;
     overflow: 'hidden';
 }
 h1 {
-    color: var(--purple);
+    color: var(--green);
     font-variant: small-caps;
     padding: 20px;
 }
@@ -57,7 +57,7 @@ main {
 
 a, a:hover {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     margin-top: 5px;
 }
 
@@ -82,7 +82,7 @@ a, a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     min-width: 300px;
-    border: solid 2px var(--gold);
+    border: solid 2px var(--green);
     border-radius: 10px;
     padding-bottom: 10px;
     overflow: hidden;
@@ -126,7 +126,7 @@ h4 {
     left: 3px;
     top: 7px;
     writing-mode: vertical-rl;
-    color: var(--surface-4);
+    color: var(--background);
     text-transform: uppercase;
     font-size: 17px;
 }
