@@ -77,6 +77,25 @@ a, a:hover {
     margin-right: 0;
 }
 
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: var(--green);
+    font-variant: small-caps;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    height: 80%;
+    overflow: 'hidden';
+    margin: 0px;
+    flex: 1;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .column {
     display: flex;
     flex-wrap: wrap;
